@@ -1,0 +1,174 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f0f0f0;
+}
+
+.container {
+  position: relative;
+  width: 650px;
+  height: 450px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.form-container {
+  width: 50%;
+  height: 100%;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #999;
+  border-radius: 50%;
+  margin: 0 5px;
+  color: #222;
+  text-align: center;
+  line-height: 38px;
+  transition: 0.3s;
+}
+
+.social-container a:hover {
+  background: #799af6;
+  border-color: #799af6;
+  color: #fff;
+}
+
+form span {
+  font-size: 14px;
+  color: #999;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  margin: 8px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0 15px 0 35px;
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  border-color: #799af6;
+}
+
+.input-box i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.check-box {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 50px;
+  background: #222;
+  color: #fff;
+  border: 2px solid #222;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#toggle {
+  display: none;
+}
+
+.panel-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#toggle:checked ~ .panel-container {
+  left: -50%;
+}
+
+.panel {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.panel h2 {
+  font-size: 20px;
+  color: #799af6;
+}
+
+.panel p {
+  font-size: 15px;
+  color: #999;
+  padding: 5px;
+}
+
+.btn-alt {
+  border-color: #fff;
+}
